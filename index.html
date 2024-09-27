@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <style>  
+        @media (max-width: 576px) {
+            .option-wrapper {
+                flex-basis: calc(33.333% - 6px);
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-3">
+        <h1 class="text-center mb-4">MCQ Quiz</h1>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span>Question <span id="current-question">1</span> of 60</span>
+                        <span id="timer">40:00</span>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="questions-list">
+
+                            <div data-answers_amount="6" data-index="0" class="question selected">
+                                <div class="question-img-wrapper"><img class="question-img replace-black" src="img/a1.jpeg"></div>
+                                <div class="answers">
+                                    <button class="answer" data-index="0">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a1.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="1">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a1.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="2">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a1.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="3">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a1.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="4">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a1.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="5">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a1.jpeg"></div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div data-answers_amount="6" data-index="1" class="question">
+                                <div class="question-img-wrapper"><img class="question-img replace-black" src="img/a2.jpeg"></div>
+                                <div class="answers">
+                                    <button class="answer" data-index="0">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a2.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="1">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a2.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="2">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a2.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="3">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a2.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="4">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a2.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="5">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a2.jpeg"></div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div data-answers_amount="6" data-index="2" class="question">
+                                <div class="question-img-wrapper"><img class="question-img replace-black" src="img/a3.jpeg"></div>
+                                <div class="answers">
+                                    <button class="answer" data-index="0">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a3.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="1">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a3.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="2">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a3.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="3">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a3.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="4">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a3.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="5">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a3.jpeg"></div>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div data-answers_amount="6" data-index="3" class="question">
+                                <div class="question-img-wrapper"><img class="question-img replace-black" src="img/a4.jpeg"></div>
+                                <div class="answers">
+                                    <button class="answer" data-index="0">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a4.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="1">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a4.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="2">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a4.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="3">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a4.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="4">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a4.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="5">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a4.jpeg"></div>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div data-answers_amount="6" data-index="4" class="question">
+                                <div class="question-img-wrapper"><img class="question-img replace-black" src="img/a5.jpeg"></div>
+                                <div class="answers">
+                                    <button class="answer" data-index="0">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a5.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="1">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a5.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="2">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a5.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="3">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a5.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="4">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a5.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="5">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a5.jpeg"></div>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div data-answers_amount="6" data-index="5" class="question">
+                                <div class="question-img-wrapper"><img class="question-img replace-black" src="img/a6.jpeg"></div>
+                                <div class="answers">
+                                    <button class="answer" data-index="0">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a6.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="1">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a6.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="2">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a6.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="3">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a6.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="4">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a6.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="5">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a6.jpeg"></div>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div data-answers_amount="6" data-index="6" class="question">
+                                <div class="question-img-wrapper"><img class="question-img replace-black" src="img/a7.jpeg"></div>
+                                <div class="answers">
+                                    <button class="answer" data-index="0">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a7.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="1">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a7.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="2">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a7.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="3">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a7.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="4">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a7.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="5">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a7.jpeg"></div>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div data-answers_amount="6" data-index="7" class="question">
+                                <div class="question-img-wrapper"><img class="question-img replace-black" src="img/a8.jpeg"></div>
+                                <div class="answers">
+                                    <button class="answer" data-index="0">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a8.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="1">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a8.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="2">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a8.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="3">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a8.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="4">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a8.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="5">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a8.jpeg"></div>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div data-answers_amount="6" data-index="8" class="question">
+                                <div class="question-img-wrapper"><img class="question-img replace-black" src="img/a9.jpeg"></div>
+                                <div class="answers">
+                                    <button class="answer" data-index="0">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a9.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="1">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a9.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="2">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a9.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="3">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a9.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="4">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a9.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="5">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a9.jpeg"></div>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div data-answers_amount="6" data-index="9" class="question">
+                                <div class="question-img-wrapper"><img class="question-img replace-black" src="img/a10.jpeg"></div>
+                                <div class="answers">
+                                    <button class="answer" data-index="0">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a10.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="1">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a10.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="2">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a10.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="3">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a10.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="4">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a10.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="5">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a10.jpeg"></div>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div data-answers_amount="6" data-index="10" class="question">
+                                <div class="question-img-wrapper"><img class="question-img replace-black" src="img/a11.jpeg"></div>
+                                <div class="answers">
+                                    <button class="answer" data-index="0">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a11.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="1">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a11.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="2">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a11.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="3">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a11.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="4">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a11.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="5">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a11.jpeg"></div>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div data-answers_amount="6" data-index="11" class="question">
+                                <div class="question-img-wrapper"><img class="question-img replace-black" src="img/a12.jpeg"></div>
+                                <div class="answers">
+                                    <button class="answer" data-index="0">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a12.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="1">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a12.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="2">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a12.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="3">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a12.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="4">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a12.jpeg"></div>
+                                    </button>
+                                    <button class="answer" data-index="5">
+                                        <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/a12.jpeg"></div>
+                                    </button>
+                                </div>
+                            </div>
+
+
+    <div data-answers_amount="6" data-index="12" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/b1.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b1.jpeg"></div>
+            </button>
+            
+        </div>
+    </div>
+
+    <div data-answers_amount="6" data-index="13" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/b2.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b2.jpeg"></div>
+            </button>
+            
+        </div>
+    </div>
+
+    <div data-answers_amount="6" data-index="14" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/b3.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b3.jpeg"></div>
+            </button>
+            
+        </div>
+    </div>
+
+    <div data-answers_amount="6" data-index="15" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/b4.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b4.jpeg"></div>
+            </button>
+            
+        </div>
+    </div>
+
+    <div data-answers_amount="6" data-index="16" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/b5.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b5.jpeg"></div>
+            </button>
+            
+        </div>
+    </div>
+
+    <div data-answers_amount="6" data-index="17" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/b6.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b6.jpeg"></div>
+            </button>
+            
+        </div>
+    </div>
+
+    <div data-answers_amount="6" data-index="18" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/b7.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b7.jpeg"></div>
+            </button>
+            
+        </div>
+    </div>
+
+    <div data-answers_amount="6" data-index="19" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/b8.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b8.jpeg"></div>
+            </button>
+            
+        </div>
+    </div>
+
+    <div data-answers_amount="6" data-index="20" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/b9.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b9.jpeg"></div>
+            </button>
+            
+        </div>
+    </div>
+
+    <div data-answers_amount="6" data-index="21" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/b10.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b10.jpeg"></div>
+            </button>
+            
+        </div>
+    </div>
+
+    <div data-answers_amount="6" data-index="22" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/b11.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b11.jpeg"></div>
+            </button>
+            
+        </div>
+    </div>
+
+    <div data-answers_amount="6" data-index="23" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/b12.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/b12.jpeg"></div>
+            </button>
+            
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="24" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/c1.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c1.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="25" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/c2.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c2.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="26" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/c3.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c3.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="27" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/c4.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c4.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="28" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/c5.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c5.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="29" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/c6.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c6.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="30" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/c7.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c7.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="31" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/c8.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c8.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="32" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/c9.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c9.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="33" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/c10.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c10.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="34" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/c11.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c11.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="35" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/c12.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/c12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="36" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/d1.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d1.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="37" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/d2.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d2.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="38" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/d3.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d3.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="39" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/d4.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d4.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="40" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/d5.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d5.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="41" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/d6.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d6.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="42" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/d7.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d7.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="43" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/d8.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d8.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="44" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/d9.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d9.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="45" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/d10.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d10.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="46" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/d11.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d11.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="47" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/d12.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/d12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="48" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/e1.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e1.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e1.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="49" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/e2.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e2.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e2.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="50" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/e3.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e3.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e3.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="51" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/e4.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e4.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e4.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="52" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/e5.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e5.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e5.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="53" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/e6.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e6.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e6.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="54" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/e7.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e7.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e7.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="55" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/e8.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e8.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e8.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="56" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/e9.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e9.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e9.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="57" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/e10.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e10.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e10.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="58" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/e11.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e11.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e11.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+    <div data-answers_amount="8" data-index="59" class="question">
+        <div class="question-img-wrapper"><img class="question-img replace-black" src="img/e12.jpeg"></div>
+        <div class="answers">
+            <button class="answer" data-index="0">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="1">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="2">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="3">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="4">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="5">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            
+            <button class="answer" data-index="6">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+            <button class="answer" data-index="7">
+                <div class="answer-img-wrapper"><img class="answer-img replace-black" src="img/e12.jpeg"></div>
+            </button>
+        </div>
+    </div>
+
+
+                            
+                            
+
+                            
+
+                        </div>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <button id="prev-btn" class="btn btn-secondary">Previous</button>
+                        <button id="next-btn" class="btn btn-primary float-end">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            const totalQuestions = 60;
+            let currentQuestion = 1;
+            let timeLeft = 40 * 60; // 40 minutes in seconds
+            let timer;
+            let selectedAnswers = new Array(totalQuestions).fill(null);
+
+            function updateQuestion() {
+                $('#current-question').text(currentQuestion);
+                updateButtons();
+                $('.question').removeClass('selected');
+                $(`.question[data-index="${currentQuestion - 1}"]`).addClass('selected');
+            }
+
+            function updateButtons() {
+                $('#prev-btn').prop('disabled', currentQuestion === 1);
+                $('#next-btn').text(currentQuestion === totalQuestions ? 'Finish' : 'Next');
+            }
+
+            function updateTimer() {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                $('#timer').text(`${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`);
+                
+                if (timeLeft === 0) {
+                    clearInterval(timer);
+                    alert('Time\'s up! The quiz has ended.');
+                } else {
+                    timeLeft--;
+                }
+            }
+
+            function generatePDF() {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF();
+                
+                doc.setFontSize(16);
+                doc.text('Quiz Results', 105, 15, null, null, 'center');
+                
+                doc.setFontSize(12);
+                selectedAnswers.forEach((answer, index) => {
+                const questionNumber = index + 1;
+                const answerText = answer !== null ? `Option ${answer + 1}` : 'Not answered';
+                doc.text(`Question ${questionNumber}: ${answerText}`, 20, 25 + (index * 7));
+            });
+            
+            doc.save('quiz_results.pdf');
+        }
+
+            $('#prev-btn').click(function() {
+                if (currentQuestion > 1) {
+                    currentQuestion--;
+                    updateQuestion();
+                }
+            });
+
+            $('#next-btn').click(function() {
+                if (currentQuestion < totalQuestions) {
+                    currentQuestion++;
+                    updateQuestion();
+                } else {
+                    alert('Quiz completed!');
+                    generatePDF();
+                    clearInterval(timer);
+                }
+            });
+
+            function moveToNextQuestion() {
+                if (currentQuestion < totalQuestions) {
+                    currentQuestion++;
+                    updateQuestion();
+                } else {
+                    alert('Quiz completed!');
+                    generatePDF();
+                    clearInterval(timer);
+                }
+            }
+
+            $('.answers').on('click', '.answer', function() {
+                const questionIndex = $(this).closest('.question').data('index');
+            const answerIndex = $(this).data('index');
+                $(this).siblings().removeClass('selected');
+                $(this).addClass('selected');
+                selectedAnswers[questionIndex] = answerIndex;
+                moveToNextQuestion();
+            });
+
+            $('.option-image').click(function() {
+                $('.option-image').removeClass('selected');
+                $(this).addClass('selected');
+            });
+
+            
+            timer = setInterval(updateTimer, 1000);
+        });
+    </script>
+</body>
+</html>
